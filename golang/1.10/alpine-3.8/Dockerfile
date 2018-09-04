@@ -61,5 +61,5 @@ ENV GOPATH /go
 ENV PATH $GOPATH/bin:/usr/local/go/bin:$PATH
 
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-RUN apk add dep make
+RUN apk add dep make git
 WORKDIR $GOPATH
